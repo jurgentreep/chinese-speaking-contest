@@ -1,6 +1,6 @@
 <?php
-    // Get language by domain
-    $language = strpos($_SERVER['HTTP_HOST'], 'jurgentreep.nl') ? 'dutch' : 'english';
+    // Get language by host
+    $language = strpos($_SERVER['HTTP_HOST'], 'jurgentreep.nl') !== false ? 'dutch' : 'english';
 
     // Get language by $_GET
     // $_GET will override domain laguage
