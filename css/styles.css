@@ -1,0 +1,11 @@
+.flag-english, .flag-dutch {
+    height: 45px;
+    padding: 8px 13px 0 0;
+    float: right;
+}
+
+@media (max-width: 767px) {
+	.navbar-brand {
+		display: none;
+	}
+}
