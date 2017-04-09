@@ -7,9 +7,9 @@
     // Get language by $_GET
     // $_GET will override domain laguage
     $possible_languages = ['dutch', 'english'];
-    
-    if(in_array($_GET['lang'], $possible_languages)) {
-        $lang = $_GET['lang'];
+
+    if(isset($_GET['language']) && in_array($_GET['language'], $possible_languages)) {
+        $lang = $_GET['langauge'];
     }
 
 ?>
