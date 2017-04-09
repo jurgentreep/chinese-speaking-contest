@@ -1,9 +1,17 @@
 <?php
-    if (isset($_GET['language']) && $_GET['language'] === 'english') {
-        $language = 'english';
-    } else {
-        $language = 'dutch';
+
+    // Get language by domain
+    $domain = str_replace('www.', '', $_SERVER['SERVER_NAME']);
+    $language = $domain === 'jurgentreep.nl' ? 'dutch' : 'english';
+
+    // Get language by $_GET
+    // $_GET will override domain laguage
+    $possible_languages = ['dutch', 'english'];
+    
+    if(in_array($_GET['lang'], $possible_languages)) {
+        $lang = $_GET['lang'];
     }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,10 +21,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Chinese spreekwedstrijd">
+
+    <?php if ($language === 'english') { ?>
+        <meta name="description" content="Chinese speaking contest">
+    <?php } else { ?>
+        <meta name="description" content="Chinese spreekwedstrijd">
+    <?php } ?>
+
     <meta name="author" content="Mike Vink">
 
-    <title>Chinese spreekwedstrijd</title>
+    <?php if ($language === 'english') { ?>
+        <title>Chinese speaking contest</title>
+    <?php } else { ?>
+        <title>Chinese spreekwedstrijd</title>
+    <?php } ?>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -129,23 +147,23 @@
                         <?php echo $language === 'english' ? 'The contest' : 'De wedstrijd'; ?>
                     </h4>
                     <?php if ($language === 'english') { ?>
-                        <p class="text-muted">
+                        <p class="text-muted text-justify">
                             This year on the 30th of May (4th block of week 4) we are organizing the very first speaking contest for the Chinese students of Zuyd university.
                         </p>
-                        <p class="text-muted">
+                        <p class="text-muted text-justify">
                             The candidates will be grouped based on their skill level in the Chinese language.
                         </p>
-                        <p class="text-muted">
+                        <p class="text-muted text-justify">
                             The winners will be awarded a free HSK test and will be granted the opportunity to contribute at the opening of the Confucius institute at Zuyd.
                         </p>
                     <?php } else { ?>
-                        <p class="text-muted">
+                        <p class="text-muted text-justify">
                             Dit jaar op dinsdag 30 mei ( 4de week van blok 4) organiseren wij de allereerste spreekwedstrijd onder de OTC studenten van de hogeschool Zuyd.
                         </p>
-                        <p class="text-muted">
+                        <p class="text-muted text-justify">
                             Hierbij worden de kandidaten ingedeeld op niveau.
                         </p>
-                        <p class="text-muted">
+                        <p class="text-muted text-justify">
                             De winnaars krijgen een gratis HSK toets en mogen iets bijdragen bij de opening van het Confucius instituut op Zuyd.
                         </p>
                     <?php } ?>
@@ -157,16 +175,16 @@
                     </span>
                     <?php if ($language === 'english') { ?>
                         <h4 class="service-heading">Requirements</h4>
-                        <p class="text-muted">Are you interested and do you meet the following requirements?</p>
-                        <ul class="text-left text-muted">
+                        <p class="text-muted text-justify">Are you interested and do you meet the following requirements?</p>
+                        <ul class="text-muted text-justify">
                             <li>You have not lived  in China for more than 6 months</li>
                             <li>You do not have Chinese parents</li>
                             <li>You are a student from OTC or IB</li>
                         </ul>
                     <?php } else { ?>
                         <h4 class="service-heading">Eisen</h4>
-                        <p class="text-muted">Heb je interesse en voldoe je aan de volgende eisen?</p>
-                        <ul class="text-left text-muted">
+                        <p class="text-muted text-justify">Heb je interesse en voldoe je aan de volgende eisen?</p>
+                        <ul class="text-muted text-justify">
                             <li>Je hebt niet langer dan 6 maanden in China gewoond</li>
                             <li>Je hebt geen Chinese ouders</li>
                             <li>Je bent een student van OTC of IB</li>
@@ -179,16 +197,16 @@
                         <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
                     </span>
                     <?php if ($language === 'english') { ?>
-                        <h4 class="service-heading">Compitition activities</h4>
-                        <p class="text-muted">The contest is composed of one round where the candidate will perform a speech of 4 to 5 minutes for a jury. You are allowed to choose from the following 2 themes:</p>
-                        <ul class="text-left text-muted">
+                        <h4 class="service-heading">Contest activities</h4>
+                        <p class="text-muted text-justify">The contest is composed of one round where the candidate will perform a speech of 4 to 5 minutes for a jury. You are allowed to choose from the following 2 themes:</p>
+                        <ul class="text-muted text-justify">
                             <li>What are your plans for after the study?</li>
                             <li>Why did you choose to study Chinese?</li>
                         </ul>
                     <?php } else { ?>
                         <h4 class="service-heading">Verloop wedstrijd</h4>
-                        <p class="text-muted">De wedstrijd bestaat uit één spreek ronde van 4 tot 5 minuten waarbij de kandidaat een zelf voorbereid stuk voordraagt aan de jury. Er zijn 2 thema's waaruit gekozen kan worden:</p>
-                        <ul class="text-left text-muted">
+                        <p class="text-muted text-justify">De wedstrijd bestaat uit één spreek ronde van 4 tot 5 minuten waarbij de kandidaat een zelf voorbereid stuk voordraagt aan de jury. Er zijn 2 thema's waaruit gekozen kan worden:</p>
+                        <ul class="text-muted text-justify">
                             <li>Wat zijn je plannen na de opleiding?</li>
                             <li>Waarom heb je gekozen om Chinees te studeren?</li>
                         </ul>
@@ -203,10 +221,10 @@
                     </span>
                     <?php if ($language === 'english') { ?>
                         <h4 class="service-heading">About us</h4>
-                        <p class="text-muted">We are two students Chinese, Mike Vink (3e jaars) and Cristina Wu (2e jaars), who are organizing this competition. In order to motivate students to use their Chinese more.</p>
+                        <p class="text-muted text-justify">We are two students Chinese, Mike Vink (3e jaars) and Cristina Wu (2e jaars), who are organizing this competition. In order to motivate students to use their Chinese more.</p>
                     <?php } else { ?>
                         <h4 class="service-heading">Over ons</h4>
-                        <p class="text-muted">Wij zijn twee studenten Chinees, Mike Vink (3e jaars) en Cristina Wu (2e jaars), die deze wedstrijd organizeren. Dit doen we om studenten te motiveren meer Chinees te laten spreken.</p>
+                        <p class="text-muted text-justify">Wij zijn twee studenten Chinees, Mike Vink (3e jaars) en Cristina Wu (2e jaars), die deze wedstrijd organizeren. Dit doen we om studenten te motiveren meer Chinees te laten spreken.</p>
                     <?php } ?>
                 </div>
                 <div class="col-md-4">
@@ -216,12 +234,12 @@
                     </span>
                     <?php if ($language === 'english') { ?>
                         <h4 class="service-heading">Signing up</h4>
-                        <p class="text-muted">Send an email to <a href="mailto:1528378wu@zuyd.nl" style="color: #337ab7;" target="_blank">1528378wu@zuyd.nl</a> in order to register yourself or to ask questions.</p>
-                        <p class="text-muted">Be aware! Signing up is only possible till the 19th of May.</p>
+                        <p class="text-muted text-justify">Send an email to <a href="mailto:1528378wu@zuyd.nl" style="color: #337ab7;" target="_blank">1528378wu@zuyd.nl</a> in order to register yourself or to ask questions.</p>
+                        <p class="text-muted text-justify">Be aware! Signing up is only possible till the 19th of May.</p>
                     <?php } else { ?>
                         <h4 class="service-heading">Inschrijven</h4>
-                        <p class="text-muted">Stuur een e-mail naar <a href="mailto:1528378wu@zuyd.nl" style="color: #337ab7;" target="_blank">1528378wu@zuyd.nl</a> om je in te schrijven of voor vragen.</p>
-                        <p class="text-muted">Let op! Uiterlijke inschrijfdatum is vrijdag 19 mei.</p>
+                        <p class="text-muted text-justify">Stuur een e-mail naar <a href="mailto:1528378wu@zuyd.nl" style="color: #337ab7;" target="_blank">1528378wu@zuyd.nl</a> om je in te schrijven of voor vragen.</p>
+                        <p class="text-muted text-justify">Let op! Uiterlijke inschrijfdatum is vrijdag 19 mei.</p>
                     <?php } ?>
                 </div>
             </div>
