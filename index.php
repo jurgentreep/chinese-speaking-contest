@@ -1,4 +1,5 @@
 <?php
+
     // Get language by host
     $language = strpos($_SERVER['HTTP_HOST'], 'jurgentreep.nl') !== false ? 'dutch' : 'english';
 
@@ -152,7 +153,7 @@
                             The candidates will be grouped based on their skill level in the Chinese language.
                         </p>
                         <p class="text-muted text-justify">
-                            The winners will be awarded a free HSK test and will be granted the opportunity to contribute at the opening of the Confucius institute at Zuyd.
+                            Winners will recieve a free HSK test and an opportunity to contribute on the opening of the Confucius institute at Zuyd.
                         </p>
                     <?php } else { ?>
                         <p class="text-muted text-justify">
@@ -173,7 +174,7 @@
                     </span>
                     <?php if ($language === 'english') { ?>
                         <h4 class="service-heading">Requirements</h4>
-                        <p class="text-muted text-justify">Are you interested and do you meet the following requirements?</p>
+                        <p class="text-muted text-justify">Are you interested? Be sure you meet the following requirements:</p>
                         <ul class="text-muted text-justify">
                             <li>You have not lived  in China for more than 6 months</li>
                             <li>You do not have Chinese parents</li>
@@ -198,7 +199,7 @@
                         <h4 class="service-heading">Contest activities</h4>
                         <p class="text-muted text-justify">The contest is composed of one round where the candidate will perform a speech of 4 to 5 minutes for a jury. You are allowed to choose from the following 2 themes:</p>
                         <ul class="text-muted text-justify">
-                            <li>What are your plans for after the study?</li>
+                            <li>What are your plans after the study?</li>
                             <li>Why did you choose to study Chinese?</li>
                         </ul>
                     <?php } else { ?>
@@ -219,7 +220,7 @@
                     </span>
                     <?php if ($language === 'english') { ?>
                         <h4 class="service-heading">About us</h4>
-                        <p class="text-muted text-justify">We are two students Chinese, Mike Vink (3e jaars) and Cristina Wu (2e jaars), who are organizing this competition. In order to motivate students to use their Chinese more.</p>
+                        <p class="text-muted text-justify">We are two Chinese students, Mike Vink (3e jaars) and Cristina Wu (2e jaars), who decided to organized this competition. This is to help motivate other students to use the chinese language.</p>
                     <?php } else { ?>
                         <h4 class="service-heading">Over ons</h4>
                         <p class="text-muted text-justify">Wij zijn twee studenten Chinees, Mike Vink (3e jaars) en Cristina Wu (2e jaars), die deze wedstrijd organizeren. Dit doen we om studenten te motiveren meer Chinees te laten spreken.</p>
@@ -232,8 +233,8 @@
                     </span>
                     <?php if ($language === 'english') { ?>
                         <h4 class="service-heading">Signing up</h4>
-                        <p class="text-muted text-justify">Send an email to <a href="mailto:1528378wu@zuyd.nl" style="color: #337ab7;" target="_blank">1528378wu@zuyd.nl</a> in order to register yourself or to ask questions.</p>
-                        <p class="text-muted text-justify">Be aware! Signing up is only possible till the 19th of May.</p>
+                        <p class="text-muted text-justify">Send an email to <a href="mailto:1528378wu@zuyd.nl" style="color: #337ab7;" target="_blank">1528378wu@zuyd.nl</a> to register or if you have questions.</p>
+                        <p class="text-muted text-justify">Reminder! Registration is only open until the 19th of May.</p>
                     <?php } else { ?>
                         <h4 class="service-heading">Inschrijven</h4>
                         <p class="text-muted text-justify">Stuur een e-mail naar <a href="mailto:1528378wu@zuyd.nl" style="color: #337ab7;" target="_blank">1528378wu@zuyd.nl</a> om je in te schrijven of voor vragen.</p>
