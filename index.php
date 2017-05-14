@@ -153,7 +153,7 @@
                             The candidates will be grouped based on their skill level in the Chinese language.
                         </p>
                         <p class="text-muted text-justify">
-                            Winners will recieve a free HSK test and an opportunity to contribute on the opening of the Confucius institute at Zuyd.
+                            Winners will receive a free HSK test and an opportunity to contribute on the opening of the Confucius institute at Zuyd.
                         </p>
                     <?php } else { ?>
                         <p class="text-muted text-justify">
@@ -163,7 +163,7 @@
                             Hierbij worden de kandidaten ingedeeld op niveau.
                         </p>
                         <p class="text-muted text-justify">
-                            De winnaars krijgen een gratis HSK toets en mogen iets bijdragen bij de opening van het Confucius instituut op Zuyd.
+                            De winnaars ontvangen een gratis HSK toets en krijgen de kans om een bijdrage te leveren aan de opening van het Confucius Instituut op Hogeschool Zuyd.
                         </p>
                     <?php } ?>
                 </div>
@@ -197,14 +197,14 @@
                     </span>
                     <?php if ($language === 'english') { ?>
                         <h4 class="service-heading">Contest activities</h4>
-                        <p class="text-muted text-justify">The contest is composed of one round where the candidate will perform a speech of 4 to 5 minutes for a jury. You are allowed to choose from the following 2 themes:</p>
+                        <p class="text-muted text-justify">For the contest, the candidate has to perform a 4-5 minute speech in Chinese in front of a jury. After that, the jury will ask 2 questions in Chinese which also have to be answered in Chinese.</p>
                         <ul class="text-muted text-justify">
                             <li>What are your plans after the study?</li>
                             <li>Why did you choose to study Chinese?</li>
                         </ul>
                     <?php } else { ?>
                         <h4 class="service-heading">Verloop wedstrijd</h4>
-                        <p class="text-muted text-justify">De wedstrijd bestaat uit één spreek ronde van 4 tot 5 minuten waarbij de kandidaat een zelf voorbereid stuk voordraagt aan de jury. Er zijn 2 thema's waaruit gekozen kan worden:</p>
+                        <p class="text-muted text-justify">De wedstrijd zal bestaan uit een spreekgedeelte waarbij een verhaal in het Chinees wordt voorgedragen van 4-5 minuten, daarna zullen er 2 vragen worden gesteld in het Chinees die ook in het Chinees beantwoord moeten worden.</p>
                         <ul class="text-muted text-justify">
                             <li>Wat zijn je plannen na de opleiding?</li>
                             <li>Waarom heb je gekozen om Chinees te studeren?</li>
@@ -220,10 +220,10 @@
                     </span>
                     <?php if ($language === 'english') { ?>
                         <h4 class="service-heading">About us</h4>
-                        <p class="text-muted text-justify">We are two Chinese students, Mike Vink (3e jaars) and Cristina Wu (2e jaars), who decided to organized this competition. This is to help motivate other students to use the chinese language.</p>
+                        <p class="text-muted text-justify">We are two Chinese students, Mike Vink (3e jaars) and Cristina Wu (2e jaars), who decided to organized this competition. This is to help motivate other students to use the chinese language more often.</p>
                     <?php } else { ?>
                         <h4 class="service-heading">Over ons</h4>
-                        <p class="text-muted text-justify">Wij zijn twee studenten Chinees, Mike Vink (3e jaars) en Cristina Wu (2e jaars), die deze wedstrijd organizeren. Dit doen we om studenten te motiveren meer Chinees te laten spreken.</p>
+                        <p class="text-muted text-justify">Wij zijn twee studenten Chinees, Mike Vink (3e years) en Cristina Wu (2e years), die deze wedstrijd organizeren. Dit doen we om studenten te motiveren meer Chinees te laten spreken.</p>
                     <?php } ?>
                 </div>
                 <div class="col-md-4">
@@ -234,10 +234,12 @@
                     <?php if ($language === 'english') { ?>
                         <h4 class="service-heading">Signing up</h4>
                         <p class="text-muted text-justify">Send an email to <a href="mailto:1528378wu@zuyd.nl" style="color: #337ab7;" target="_blank">1528378wu@zuyd.nl</a> to register or if you have questions.</p>
+                        <p>Please make sure to state your name, class and the theme you're going to talk about in the email.</p>
                         <p class="text-muted text-justify">Reminder! Registration is only open until the 19th of May.</p>
                     <?php } else { ?>
                         <h4 class="service-heading">Inschrijven</h4>
                         <p class="text-muted text-justify">Stuur een e-mail naar <a href="mailto:1528378wu@zuyd.nl" style="color: #337ab7;" target="_blank">1528378wu@zuyd.nl</a> om je in te schrijven of voor vragen.</p>
+                        <p>Vermeld in de email wat je naam is, in welke klas je zit en waar je over gaat praten</p>
                         <p class="text-muted text-justify">Let op! Uiterlijke inschrijfdatum is vrijdag 19 mei.</p>
                     <?php } ?>
                 </div>
@@ -252,7 +254,7 @@
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Websites</h2>
                     <?php if ($language === 'english') { ?>
-                        <h3 class="section-subheading text-muted">Here's a couple of interesting websites to take a look at</h3>
+                        <h3 class="section-subheading text-muted">Here are a couple of interesting websites to take a look at</h3>
                     <?php } else { ?>
                         <h3 class="section-subheading text-muted">Hier zijn een aantal interresante websites om te bekijken</h3>
                     <?php } ?>
