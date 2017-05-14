@@ -234,12 +234,12 @@
                     <?php if ($language === 'english') { ?>
                         <h4 class="service-heading">Signing up</h4>
                         <p class="text-muted text-justify">Send an email to <a href="mailto:1528378wu@zuyd.nl" style="color: #337ab7;" target="_blank">1528378wu@zuyd.nl</a> to register or if you have questions.</p>
-                        <p>Please make sure to state your name, class and the theme you're going to talk about in the email.</p>
+                        <p class="text-muted text-justify">Please make sure to state your name, class and the theme you're going to talk about in the email.</p>
                         <p class="text-muted text-justify">Reminder! Registration is only open until the 19th of May.</p>
                     <?php } else { ?>
                         <h4 class="service-heading">Inschrijven</h4>
                         <p class="text-muted text-justify">Stuur een e-mail naar <a href="mailto:1528378wu@zuyd.nl" style="color: #337ab7;" target="_blank">1528378wu@zuyd.nl</a> om je in te schrijven of voor vragen.</p>
-                        <p>Vermeld in de email wat je naam is, in welke klas je zit en waar je over gaat praten</p>
+                        <p class="text-muted text-justify">Vermeld in de email wat je naam is, in welke klas je zit en waar je over gaat praten.</p>
                         <p class="text-muted text-justify">Let op! Uiterlijke inschrijfdatum is vrijdag 19 mei.</p>
                     <?php } ?>
                 </div>
